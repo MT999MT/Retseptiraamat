@@ -59,6 +59,7 @@ public class Kylmkapp {
     // Tagastab külmkapi sisu massiivina.
 
     public ArrayList<String> getSisu() {
+
         return sisu;
     }
 
@@ -66,12 +67,14 @@ public class Kylmkapp {
     // Tagastab koostisosade arvu.
 
     public int getArvutSisus() {
+
         return sisu.size();
     }
 
 
     // Kontrollib kas külmkapp on hetkel tühi
     public boolean onPeaaeguTyhi() {
+
         return sisu.size() < 3;
     }
 

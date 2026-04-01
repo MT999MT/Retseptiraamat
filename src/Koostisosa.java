@@ -33,28 +33,34 @@ public class Koostisosa {
     }
 
     public int getKogus() {
+
         return kogus;
     }
 
     public String getYksus() {
+
         return yksus;
     }
 
     // Set-meetodid
 
     public void setNimi(String nimi) {
+
         this.nimi = nimi;
     }
 
     public void setKogus(int kogus) {
+
         this.kogus = kogus;
     }
 
     public void setYksus(String yksus) {
+
         this.yksus = yksus;
     }
 
     public String toString() {
+
         return kogus + " " + yksus + " " + nimi;
     }
 }

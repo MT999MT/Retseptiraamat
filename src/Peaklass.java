@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -36,6 +37,7 @@ public class Peaklass {
             System.out.println("1 - Sisesta koostisosad ja otsi retsepte");
             System.out.println("2 - Vaata külmkappi");
             System.out.println("3 - Lisa oma retsept");
+            System.out.println("4 - Vali suvaline retsept");
             System.out.println("0 - Välju");
             System.out.print("Vali tegevus: ");
 
@@ -145,6 +147,20 @@ public class Peaklass {
 
                 case "3":
                     lisaKasutajaRetsept(scanner, raamat, kylmkapp);
+                    break;
+
+                case "4":
+                    System.out.println();
+                    System.out.println("🎲 Suvaline retsept:");
+
+                    Retsept suvaline = raamat.juhuslikRetsept();
+
+                    if (suvaline == null) {
+                        System.out.println("Retseptiraamat on tühi!");
+                    } else {
+                        System.out.println(suvaline);
+                    }
+
                     break;
 
                 case "0":
