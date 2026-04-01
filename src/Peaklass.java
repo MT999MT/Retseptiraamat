@@ -38,6 +38,7 @@ public class Peaklass {
             System.out.println("2 - Vaata külmkappi");
             System.out.println("3 - Lisa oma retsept");
             System.out.println("4 - Vali suvaline retsept");
+            System.out.println("5 - Vaata kõiki retsepte");
             System.out.println("0 - Välju");
             System.out.print("Vali tegevus: ");
 
@@ -158,9 +159,31 @@ public class Peaklass {
                     if (suvaline == null) {
                         System.out.println("Retseptiraamat on tühi!");
                     } else {
+                        // kuva retsept
                         System.out.println(suvaline);
+
+                        // võta külmkapi sisu
+                        ArrayList<String> olemas = kylmkapp.getSisu();
+
+                        // leia puuduvad koostisosad
+                        ArrayList<String> puuduvad = suvaline.puuduvadKoostisosad(olemas);
+
+                        // kontroll
+                        if (puuduvad.isEmpty()) {
+                            System.out.println("Kõik koostisosad on olemas – saad kohe kokkama hakata! 🍳");
+                        } else {
+                            System.out.println("Selle retsepti jaoks on sul puudu:");
+
+                            for (int i = 0; i < puuduvad.size(); i++) {
+                                System.out.println("  -> " + puuduvad.get(i));
+                            }
+                        }
                     }
 
+                case "5":
+                    System.out.println();
+                    System.out.println("Kõik retseptiraamatu retseptid:");
+                    raamat.kuvaKoikRetseptid();
                     break;
 
                 case "0":

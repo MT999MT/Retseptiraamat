@@ -88,6 +88,86 @@ public class RetseptiRaamat {
         kartulipuder.lisaKoostisosa("vorst");
         kartulipuder.lisaKoostisosa("sool");
         retseptid.add(kartulipuder);
+
+        Retsept kanaCurry = new Retsept("Kana curry riisiga", 50);
+        kanaCurry.lisaKoostisosa("kana");
+        kanaCurry.lisaKoostisosa("curry pasta");
+        kanaCurry.lisaKoostisosa("piimakoor");
+        kanaCurry.lisaKoostisosa("porgand");
+        kanaCurry.lisaKoostisosa("sibul");
+        retseptid.add(kanaCurry);
+
+        Retsept kreemjasPasta = new Retsept("Kreemjas pasta seentega", 30);
+        kreemjasPasta.lisaKoostisosa("pasta");
+        kreemjasPasta.lisaKoostisosa("seened");
+        kreemjasPasta.lisaKoostisosa("koor");
+        kreemjasPasta.lisaKoostisosa("sibul");
+        kreemjasPasta.lisaKoostisosa("küüslauk");
+        retseptid.add(kreemjasPasta);
+
+        Retsept suppTomat = new Retsept("Tomatisupp basiilikuga", 25);
+        suppTomat.lisaKoostisosa("tomatid");
+        suppTomat.lisaKoostisosa("sibul");
+        suppTomat.lisaKoostisosa("küüslauk");
+        suppTomat.lisaKoostisosa("petersell");
+        suppTomat.lisaKoostisosa("basiilik");
+        retseptid.add(suppTomat);
+
+        Retsept salatKanasalat = new Retsept("Kanasalat jogurti kastmega", 20);
+        salatKanasalat.lisaKoostisosa("kana");
+        salatKanasalat.lisaKoostisosa("salatilehed");
+        salatKanasalat.lisaKoostisosa("tomat");
+        salatKanasalat.lisaKoostisosa("kurk");
+        salatKanasalat.lisaKoostisosa("jogurt");
+        retseptid.add(salatKanasalat);
+
+        Retsept köögiviljapirukas = new Retsept("Köögiviljapirukas", 60);
+        köögiviljapirukas.lisaKoostisosa("pärmitaigen");
+        köögiviljapirukas.lisaKoostisosa("porgand");
+        köögiviljapirukas.lisaKoostisosa("brokoli");
+        köögiviljapirukas.lisaKoostisosa("paprika");
+        köögiviljapirukas.lisaKoostisosa("juust");
+        retseptid.add(köögiviljapirukas);
+
+        Retsept omlettKartul = new Retsept("Omlett kartulitega", 20);
+        omlettKartul.lisaKoostisosa("munad");
+        omlettKartul.lisaKoostisosa("kartul");
+        omlettKartul.lisaKoostisosa("piim");
+        omlettKartul.lisaKoostisosa("sool");
+        omlettKartul.lisaKoostisosa("pipar");
+        retseptid.add(omlettKartul);
+
+        Retsept pannkoogidMarjad = new Retsept("Pannkoogid marjadega", 35);
+        pannkoogidMarjad.lisaKoostisosa("jahu");
+        pannkoogidMarjad.lisaKoostisosa("munad");
+        pannkoogidMarjad.lisaKoostisosa("piim");
+        pannkoogidMarjad.lisaKoostisosa("marjad");
+        pannkoogidMarjad.lisaKoostisosa("suhkur");
+        retseptid.add(pannkoogidMarjad);
+
+        Retsept magusKreem = new Retsept("Magus kreem šokolaadiga", 25);
+        magusKreem.lisaKoostisosa("piim");
+        magusKreem.lisaKoostisosa("suhkur");
+        magusKreem.lisaKoostisosa("šokolaad");
+        magusKreem.lisaKoostisosa("jahu");
+        magusKreem.lisaKoostisosa("munad");
+        retseptid.add(magusKreem);
+
+        Retsept sushiKodune = new Retsept("Kodune sushi", 45);
+        sushiKodune.lisaKoostisosa("riis");
+        sushiKodune.lisaKoostisosa("vetikad");
+        sushiKodune.lisaKoostisosa("kurgi");
+        sushiKodune.lisaKoostisosa("avokaado");
+        sushiKodune.lisaKoostisosa("sojakaste");
+        retseptid.add(sushiKodune);
+
+        Retsept wrapsKana = new Retsept("Wrap kanaga", 20);
+        wrapsKana.lisaKoostisosa("tortilla");
+        wrapsKana.lisaKoostisosa("kana");
+        wrapsKana.lisaKoostisosa("salatilehed");
+        wrapsKana.lisaKoostisosa("tomat");
+        wrapsKana.lisaKoostisosa("juust");
+        retseptid.add(wrapsKana);
     }
 
     public void lisaRetsept(Retsept r) {
